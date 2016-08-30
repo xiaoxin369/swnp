@@ -7,7 +7,8 @@ RUN apt-get update && \
 
 RUN pip install shadowsocks==2.8.2
 
-RUN git clone https://github.com/snooda/net-speeder.git net-speeder
+#RUN git clone https://github.com/snooda/net-speeder.git net-speeder
+RUN git clone https://github.com/xiaoxin369/net-speeder.git net-speeder
 WORKDIR net-speeder
 RUN sh build.sh
 
